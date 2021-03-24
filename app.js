@@ -1,7 +1,18 @@
+
+
+
+
+
+function random() {
+
+  let gameOptions = ['rock', 'paper', 'scissors']
+  return gameOptions[Math.floor(Math.random() * gameOptions.length)]
+}
+
 function play(playerChoice) {
   console.log("You clicked", playerChoice)
 
-  let compChoice = 'paper'
+  let compChoice = random()
 
   if (playerChoice == compChoice) {
     //console.log("Tie Game! You Both Have", playerChoice)

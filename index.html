@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="container-fluid">
+  <header class="container-fluid p-5">
     <div class="row">
       <div class="col text-center">
         <h1>Rock Paper Scissors | The Game!</h1>
@@ -23,15 +23,17 @@
     </div>
   </header>
 
-
   <main class="container">
     <div class="row p-5">
-      <div class="col text-center">
+      <div class="col text-center p-3">
         <h2 class="pb-3">Choose Your Weapon</h2>
-        <button id="rock" class="btn btn-primary" onclick="play('rock')">Rock</button>
-        <button id="paper" class="btn btn-secondary" onclick="play('paper')">Paper</button>
-        <button id="scissors" class="btn btn-warning" onclick="play('scissors')">Scissors</button>
-        <button id="random" class="btn btn-danger" onclick="play('random')">Random</button>
+        <button id="rock" class="btn btn-primary mx-3" onclick="play('rock')"><i
+            class="far fa-hand-rock"></i><br>Rock</button>
+        <button id="paper" class="btn btn-secondary mx-3" onclick="play('paper')"><i
+            class="far fa-hand-paper"></i><br>Paper</button>
+        <button id="scissors" class="btn btn-warning mx-3" onclick="play('scissors')"><i
+            class="far fa-hand-scissors"></i><br>Scissors</button>
+        <!--        <button id="random" class="btn btn-danger" onclick="play('random')">Random</button>-->
       </div>
     </div>
     </div>
