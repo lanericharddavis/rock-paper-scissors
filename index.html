@@ -5,12 +5,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Rock|Paper|Scissors</title>
 </head>
 
 <body>
-  <h1>YO!</h1>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Rock Paper Scissors | The Game!</h1>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div class="row p-5">
+      <div class="col text-center">
+        <h2 class="pb-3">Choose Your Weapon</h2>
+        <button id="rock" class="btn btn-primary" onclick="play('rock')">Rock</button>
+        <button id="paper" class="btn btn-secondary" onclick="play('paper')">Paper</button>
+        <button id="scissors" class="btn btn-warning" onclick="play('scissors')">Scissors</button>
+        <button id="random" class="btn btn-danger" onclick="play('random')">Random</button>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-6 text-center">
+        <h3 id="youClickMsg">What You Picked</h3>
+      </div>
+      <div class="col-6 text-center">
+        <h3 id="compChoiceMsg">What Computer Picked</h3>
+      </div>
+    </div>
+    <div class="row p-5">
+      <div class="col text-center ">
+        <h2 id="outcomeMsg">Result</h2>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col text-center">
+        <p>Thanks for Playing!</p>
+        <p>Page Created by Lane Davis</p>
+      </div>
+    </div>
+  </footer>
+
+
 
 
   <script src="app.js"></script>
